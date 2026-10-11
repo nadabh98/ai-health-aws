@@ -1,15 +1,41 @@
-.venv/
+
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
 .ipynb_checkpoints/
+
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Logs and operating system files
 *.log
 .DS_Store
+Thumbs.db
 
+# Raw and processed datasets
 data/raw/*
-data/processed/*
 !data/raw/.gitkeep
+
+data/processed/*
 !data/processed/.gitkeep
 
+# Trained models and model artifacts
 models/*
 !models/.gitkeep
